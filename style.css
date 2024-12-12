@@ -1,0 +1,57 @@
+
+body {
+    background-color: #ecf0f1;
+}
+
+.link {
+    text-decoration: none;
+    color: #3498db;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+#main-card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#main-card h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+#main-card p {
+    color: #34495e;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    #main-card {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#main-card {
+    animation: fadeIn 1s ease-in;
+}
